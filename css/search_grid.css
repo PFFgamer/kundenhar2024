@@ -1,0 +1,47 @@
+div#grid {
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 15vh 15vh 60vh 10vh;
+    grid-template-areas: 
+    'log nav'
+    'asi hed'
+    'asi sec'
+    'fot fot';
+}
+
+#temp {
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+#grid > * {
+    padding: 10px;
+    overflow: hidden;
+}
+
+#log {
+    grid-area: log;
+}
+
+#nav {
+    grid-area: nav;
+}
+
+#asi {
+    grid-area: asi;
+}
+
+#hed {
+    grid-area: hed;
+}
+
+#sec {
+    grid-area: sec;
+    overflow-y: auto;
+}
+
+#fot {
+    grid-area: fot;
+}

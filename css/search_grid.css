@@ -1,9 +1,10 @@
 div#grid {
     height: 100vh;
+    overflow-y: auto;
 
     display: grid;
-    grid-template-columns: 30vw 70vw;
-    grid-template-rows: 15vh 15vh 60vh 10vh;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 15vh 15vh 1fr 5vh;
     grid-template-areas: 
     'log nav'
     'asi hed'
@@ -11,37 +12,76 @@ div#grid {
     'fot fot';
 }
 
-#temp {
-    height: 100vh;
-    background-color: aquamarine;
-}
-
 #grid > * {
     padding: 10px;
     overflow: hidden;
-}
-
-#log {
-    grid-area: log;
-}
-
-#nav {
-    grid-area: nav;
+    display: flex;
 }
 
 #asi {
     grid-area: asi;
+    background-color: rgb(30, 98, 143);
+
+    border-width: 0px;
+    border-right: 3px;
+    border-color: black;
+    border-style: solid;
 }
 
 #hed {
     grid-area: hed;
+    background-color: rgb(41, 128, 185);
+
+    border-width: 0px;
+    border-bottom: 3px;
+    border-color: black;
+    border-style: solid;
 }
 
 #sec {
     grid-area: sec;
+    padding: 0px;
+
     overflow-y: auto;
+    scrollbar-width: none;
+
+    flex-wrap: wrap;
 }
 
-#fot {
-    grid-area: fot;
+.articles {
+    height: 360px;
+    width: 200px;
+    margin: 12px;
+
+    border-radius: 20px;
+    background-color: rgb(75, 158, 212);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: start;
+}
+
+.articles_pics {
+    height: 50%;
+    border-width: 0px;
+    border-bottom: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+.articles h2 {
+    margin: 3px;
+    font-size: medium;
+}
+
+.articles p {
+    margin: 2px 0px 0px 5px;
+    font-size: 12px;
+}
+
+.articles h3 {
+    margin: 3px;
+    font-size: small;
 }

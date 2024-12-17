@@ -1,9 +1,50 @@
 body {
     margin: 0px;
+    background-color: rgb(41, 128, 185);
+}
+
+.log {
+    grid-area: log;
+    background-color: rgb(26, 86, 125);
+    padding: 0px;
+    
+    border-width: 0px;
+    border-bottom: 5px;
+    border-color: black;
+    border-style: solid;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(26, 86, 125);
+
+    border-width: 0px;
+    border-bottom: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+.fot {
+    grid-area: fot;
+    background-color: rgb(26, 86, 125);
+
+    border-width: 0px;
+    border-top: 3px;
+    border-color: black;
+    border-style: solid;
 }
 
 .logo_text {
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
     font-style: normal;
-}  
+    font-size: 50px;
+}
+
+.logo_pic {
+    height: 75%;
+    border-radius: 3.75px;
+}

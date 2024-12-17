@@ -1,0 +1,42 @@
+div#grid {
+    height: 100vh;
+    overflow-y: auto;
+    
+    display: grid;
+    grid-template-columns: 30vw 20vw 1fr 20vw;
+    grid-template-rows: 15vh 50vh 1fr 5vh;
+    grid-template-areas: 
+    'log nav nav nav'
+    'man man sec asi'
+    'art art art asi'
+    'fot fot fot fot';
+}
+
+#grid > * {
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+}
+
+#man {
+    grid-area: man;
+    padding: 0px;
+}
+
+#sec {
+    grid-area: sec;
+}
+
+#asi {
+    grid-area: asi;
+    background-color: rgb(30, 98, 143);
+
+    border-width: 0px;
+    border-left: 3px;
+    border-color: black;
+    border-style: solid;
+}
+
+#art {
+    grid-area: art;
+}
